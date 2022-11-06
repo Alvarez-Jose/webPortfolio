@@ -21,7 +21,7 @@
                     <li><a href='CV_AlonsoBlanco.pdf' download="CV_AlonsoBlanco">Download</a></li>
                 </ul>
             </li>
-            <li><a href='Projects.html'>Publications</a></li>
+            <li><a href='Projects.html'>Projects</a></li>
             <li><a href='index.html'>Home</a></li>
             <ul class='sub-menus'>
                 <li><a href='http://'>Services 1</a></li>
@@ -107,7 +107,7 @@
                     <h3></h3>
                     <p>Casanova, S. & Alonso Blanco, V. (2021). [Review of the book Power to the Transfer Critical Race Theory and a Transfer Receptive Culture Perspectives on Access, Equity, and Diversifying Pathways in P-20 Education, by D. Jain, S.N.
                         Bernal Melendez & A.R. Herrera]. Teachers College Record</p>
-                    <a href="#" class="btn">DOI</a>
+                    <!--unneed DOI button <a href="#" class="btn">DOI</a> -->
                 </article>
             </div>
             <ul class="actions">
@@ -118,21 +118,28 @@
         <!-- Three -->
         <section id="three">
             <h2>Get In Touch</h2>
-            <div class="row">
-                <div class="col-8 col-12-small">
-                    <form method="post" action="#">
-                        <div class="row gtr-uniform gtr-50">
-                            <div class="col-6 col-12-xsmall"><input type="text" name="name" id="name" placeholder="Name" /></div>
-                            <div class="col-6 col-12-xsmall"><input type="email" name="email" id="email" placeholder="Email" /></div>
-                            <div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
-                        </div>
-                    </form>
-                    <ul class="actions">
-                        <li><input type="submit" value="Send Message" /></li>
-                    </ul>
+            <form id = "form">
+                <div class="row">
+                    <div class="col-8 col-12-small">
+                            <div class="row gtr-uniform gtr-50">
+                                <div class="col-6 col-12-xsmall"><input type="text" name="your_name" id="your_name" placeholder="Your Name" /></div>
+                                <div class="col-6 col-12-xsmall"><input type="email" name="Your email" id="your_email" placeholder="Your Email" /></div>
+                                <div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
+                            </form>
+                            <ul class="actions">
+                                <li><input type="submit" id="button" value="Send Email" ></li>
+                            </ul>
+                            <script type="text/javascript"
+                              src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+                            
+                            <script type="text/javascript">
+                              emailjs.init('Ng-FWiFbT9nCIZk8J')
+                            </script>
+                            </div>
+                        </form>
+                    </div>
                 </div>
-
-            </div>
+            </form>
         </section>
         <!-- Footer -->
         <footer id="footer">
@@ -147,7 +154,6 @@
                 </ul>
             </div>
         </footer>
-
         <!-- Scripts -->
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/jquery.poptrox.min.js"></script>
@@ -155,7 +161,7 @@
         <script src="assets/js/breakpoints.min.js"></script>
         <script src="assets/js/util.js"></script>
         <script src="assets/js/main.js"></script>
-
+        <script src="assets/js/app.js"></script>
 </body>
 
 </html>
