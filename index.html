@@ -13,20 +13,18 @@
 
 <body class="is-preload">
     <!-- Nav bar -->
-    <nav id='menu'>
-        <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+    <nav id="menu">
+        <input type="checkbox" id="responsive-menu" onclick="updatemenu()">
+        <label></label>
         <ul>
-            <li><a class='dropdown-arrow' href='http://'>CV</a>
-                <ul class='sub-menus'>
-                    <li><a href='CV_AlonsoBlanco.pdf' download="CV_AlonsoBlanco">Download</a></li>
+            <li>
+                <a class="dropdown-arrow" href="#" onclick="openCVPopup()">CV</a>
+                <ul class="sub-menus">
+                    <li><a href="CV_AlonsoBlanco.pdf" download="CV_AlonsoBlanco">Download</a></li>
                 </ul>
             </li>
-            <li><a href='Projects.html'>Projects</a></li>
-            <li><a href='index.html'>Home</a></li>
-            <ul class='sub-menus'>
-                <li><a href='http://'>Services 1</a></li>
-            </ul>
-            </li>
+            <li><a href="Projects.html">Projects</a></li>
+            <li><a href="index.html">Home</a></li>
         </ul>
     </nav>
     <!-- Header -->
@@ -57,9 +55,15 @@
             <header class="major">
                 <h2>Biography</h2>
             </header>
-            Valeria Alonso Blanco is a fourth-year Ph.D student in Psychology at the University of California, Santa Cruz (UCSC). Her research interests explore the links between cultural values, identity, academic outcomes, and fostering belonging for minoritized
-            community college transfer students. She works with Dr.Saskias Casanova at the Migration, Identity, and Education Lab (MIEL). She is also a graduate researcher for Cultivamos Excelencia, an HSI Initiative focused on community college student
-            outreach and developing a transfer receptive culture at UCSC. Valeria enjoys hiking, surfing, running, visiting new places, and watching movies in her free time.
+            Valeria Alonso Blanco is a fourth-year Ph.D student in Psychology at the University of California, 
+            Santa Cruz (UCSC). Her research interests explore the links between cultural values, identity, 
+            academic outcomes, and fostering belonging for minoritized community college transfer students. 
+            Currently, she works with Dr.Saskias Casanova at the Migration, Identity, and Education Lab (MIEL). 
+            She is also a graduate researcher for Cultivamos Excelencia, an HSI Initiative focused on community college 
+            student outreach and developing a transfer receptive culture at UCSC. She is the first of her family to go to 
+            college but believes she won’t be the last; she has two younger brothers she hopes to inspire to 
+            pursue higher education. Valeria enjoys hiking, surfing, running, visiting new places, and
+            watching movies in her free time.
             <ul class="actions">
                 <!--<li><a href="#" class="button">Learn More</a></li>-->
 
@@ -162,6 +166,8 @@
         <script src="assets/js/util.js"></script>
         <script src="assets/js/main.js"></script>
         <script src="assets/js/app.js"></script>
+        <!--JS functions for pop-ups-->
+        <script src="assets/js/CVpopup.js"></script>
+        <script src="assets/js/Popup.js"></script>
 </body>
-
 </html>
