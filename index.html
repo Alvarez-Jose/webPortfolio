@@ -30,7 +30,7 @@
     <!-- Header -->
     <header id="header">
         <div class="inner">
-            <img src="images/valeria.jpeg" alt>
+            <img src="images/rsz_1rsz_2valeria.jpg" alt>
             <h1><strong>Valeria J Alonso Blanco</strong></h1>
             Pronouns: She/Her
             <h1><strong>Education</strong></h1>
@@ -122,29 +122,27 @@
         <!-- Three -->
         <section id="three">
             <h2>Get In Touch</h2>
-            <form id = "form">
+            <form id="form">
                 <div class="row">
                     <div class="col-8 col-12-small">
-                            <div class="row gtr-uniform gtr-50">
-                                <div class="col-6 col-12-xsmall"><input type="text" name="your_name" id="your_name" placeholder="Your Name" /></div>
-                                <div class="col-6 col-12-xsmall"><input type="email" name="Your email" id="your_email" placeholder="Your Email" /></div>
-                                <div class="col-12"><textarea name="message" id="message" placeholder="Message" rows="4"></textarea></div>
-                            </form>
-                            <ul class="actions">
-                                <li><input type="submit" id="button" value="Send Email" ></li>
-                            </ul>
-                            <script type="text/javascript"
-                              src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-                            
-                            <script type="text/javascript">
-                              emailjs.init('Ng-FWiFbT9nCIZk8J')
-                            </script>
+                        <div class="row gtr-uniform gtr-50">
+                            <div class="col-6 col-12-xsmall"><input type="text" name="your_name" id="your_name" placeholder="Your Name" /></div>
+                            <div class="col-6 col-12-xsmall"><input type="email" name="your_email" id="your_email" placeholder="Your Email" /></div>
+                            <div class="col-12"><textarea name="message" id="message" placeholder="message" rows="4"></textarea></div>
+                            <div class="col-12">
+                                <div class="g-recaptcha" data-sitekey="6LdQhskmAAAAAASlyMgKoFtScFIOuCoGwOqowJ7H"></div>
                             </div>
-                        </form>
+                            <div class="col-12">
+                                <ul class="actions">
+                                    <input type="submit" id="button" value="Send Email">
+                                </ul>
+                            </div>                            
+                        </div>
                     </div>
                 </div>
             </form>
         </section>
+        
         <!-- Footer -->
         <footer id="footer">
             <div class="inner">
@@ -158,7 +156,21 @@
                 </ul>
             </div>
         </footer>
+        <script>
+            //window.addEventListener('DOMContentLoaded', removeHashFromURL);
+          </script>          
         <!-- Scripts -->
+        <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("xR74W11xYFq5OMbpe");
+   })();
+</script>
+        <script>"assets/js/reCAPTCHA.js"</script>
+        <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+        <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit" async defer></script>
         <script src="assets/js/jquery.min.js"></script>
         <script src="assets/js/jquery.poptrox.min.js"></script>
         <script src="assets/js/browser.min.js"></script>
